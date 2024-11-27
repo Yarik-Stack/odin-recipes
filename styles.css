@@ -1,0 +1,72 @@
+/* General styles*/
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-top: 24px;
+    line-height: 1.7em;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+* {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    border-radius: 10px;
+}
+
+ol, ul {
+    list-style: none;
+    counter-reset: item;
+
+}
+
+ol li::before {
+    content: counter(item) ' Step';
+    counter-increment: item;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+ol li p {
+    margin-top: 10px;
+}
+
+/* Menu styles*/
+.homepage {
+    text-align: center;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.nav-item:last-of-type {
+    margin-right: 0;
+}
+
+/* Common styles */
+
+.ingredients {
+    font-weight: 600;
+}
+
+/* Pancit styles*/
+
+.pancit-how {
+    list-style: disc;
+    margin-left: 15px;
+}
+
+.pancit-description {
+    font-weight: 600;
+}
